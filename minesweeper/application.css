@@ -19,6 +19,8 @@
   font-size: 26px;
   font-weight: bold;
   padding-top: 25%;
+  user-select: none;
+   -webkit-user-select: none;
 }
 
 .revealed {
@@ -34,6 +36,7 @@
   background-image: url("https://image.shutterstock.com/image-vector/vector-illustration-bomb-burning-wick-600w-1454003984.jpg");
   background-size: 100%
 }
+
 
 
 

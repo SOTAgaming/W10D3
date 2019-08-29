@@ -396,7 +396,7 @@ function (_React$Component) {
         this.props.tile.toggleFlag();
       }
 
-      if (e.altKey) {
+      if (e.altKey && !this.props.tile.explored) {
         e.currentTarget.classList.add("flagged");
         flagged = true;
       } else if (this.props.tile.bombed) {
