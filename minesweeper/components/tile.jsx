@@ -15,14 +15,16 @@ export default class Tile extends React.Component {
       return 
     }
     let flagged = false
+    if (this.props.tile.flagged && !e.altKey) {
+      e.currentTarget.classList.remove("flagged")
+      this.props.tile.toggleFlag()
+    }
     
 
-    e.currentTarget.classList.remove("flagged")
-
     if ( e.altKey) {
+
        e.currentTarget.classList.add("flagged")
        flagged = true
-
     } else if (this.props.tile.bombed) {
       // this.setState({text: "B"})
       e.currentTarget.classList.add("bombed")

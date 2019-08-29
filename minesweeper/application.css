@@ -21,6 +21,10 @@
   padding-top: 25%;
 }
 
+.revealed {
+  background-color: white;
+}
+
 .flagged {
   background-image: url("https://www.countryflags.io/us/shiny/64.png");
   background-size: 100%
@@ -31,9 +35,7 @@
   background-size: 100%
 }
 
-.revealed {
-  background-color: white;
-}
+
 
 /* PHASE 12: Modal */
 

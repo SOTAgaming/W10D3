@@ -390,7 +390,11 @@ function (_React$Component) {
       }
 
       var flagged = false;
-      e.currentTarget.classList.remove("flagged");
+
+      if (this.props.tile.flagged && !e.altKey) {
+        e.currentTarget.classList.remove("flagged");
+        this.props.tile.toggleFlag();
+      }
 
       if (e.altKey) {
         e.currentTarget.classList.add("flagged");
